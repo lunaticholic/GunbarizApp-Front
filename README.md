@@ -1,2 +1,8 @@
-# GunbarizApp-Front
+# GunbarizApp
 Gunbariz w/ React Native + node.js
+
+이 곳은 군바리들의 일상을 나누는 곳입니다.
+
+익명으로 진행되는 만큼 정보게시물을 제외한 모든 게시물은 사실확인절차를 거치게 됩니다.
+
+만약, 허위사실로 입증되게 되는 경우 관계법령에 의거 처벌받을 수 있습니다.

@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, Image, SafeAreaView, TouchableOpacity } from 'r
 
 import { widthPercentageToDP as wpdp, heightPercentageToDP as hpdp } from 'react-native-responsive-screen';
 
-const LogoutScreen: () => React$Node = () => {
+function LogoutScreen({navigation}) {
     return (
         <View style={styles.container}>
             <View style={{flex: 1.5}} />
@@ -14,7 +14,7 @@ const LogoutScreen: () => React$Node = () => {
             </View>
             <View style={{flex: 0.5, flexDirection: 'row'}}>
                 <View style={styles.btnArea}>
-                    <TouchableOpacity style={styles.btnoutline}>
+                    <TouchableOpacity style={styles.btnoutline} onPress={() => navigation.navigate('Login')}>
                         <Text>LOGIN</Text>
                     </TouchableOpacity>
                 </View>

@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import LogoutScreen from './Components/LogoutScreen'
 import LoginScreen from './Components/LoginScreen'
+import BackButton from './Components/BackButton.js'
 
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
@@ -14,7 +15,7 @@ const App: () => React$Node = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Logout" component={LogoutScreen} options={{headerShown: false}} />
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} options={{title: '', headerBackTitleVisible: false, headerBackImage: BackButton}} />
       </Stack.Navigator>
     </NavigationContainer>
   );

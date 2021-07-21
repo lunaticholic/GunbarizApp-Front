@@ -1,7 +1,7 @@
 import React from 'react';
 import { widthPercentageToDP as wpdp, heightPercentageToDP as hpdp } from 'react-native-responsive-screen';
 
-import 'react-native-gestrue-handler';
+import 'react-native-gesture-handler';
 
 import { StyleSheet, View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 
@@ -19,8 +19,8 @@ function LoginScreen({navigation: {navigate}}) {
             </View>
 
             <View style={styles.formArea}>
-                <TextInput style={styles.textFromTop} placeholder={'아이디'} />
-                <TextInput style={styles.textFromBottom} placeholder={'비밀번호'} />
+                <TextInput style={styles.textFormTop} placeholder={'아이디'} />
+                <TextInput style={styles.textFormBottom} placeholder={'비밀번호'} />
                 <Text style={styles.TextValidation}>유효하지 않은 ID입니다.</Text>
             </View>
             
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     Text: {
-        fontSize: wp('4%'),
+        fontSize: wpdp('4%'),
     },
     TextValidation: {
-        fontSize: wp('4%'),
+        fontSize: wpdp('4%'),
         color: 'red',
-        paddingTop: wp(2),
+        paddingTop: wpdp(2),
     },
 
     formArea: {
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 7,
         borderTopRightRadius: 7,
         width: '100%',
-        height: hp(6),
+        height: hpdp(6),
         paddingLeft: 10,
         paddingRight: 10,
     },
@@ -90,16 +90,16 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 7,
         borderBottomLeftRadius: 7,
         width: '100%',
-        height: hp(6),
+        height: hpdp(6),
         paddingLeft: 10,
         paddingRight: 10,
     },
     btnArea: {
-        height: hp(8),
+        height: hpdp(8),
         // backgroundColor: 'orange',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingBottom: hp(1.5),
+        paddingBottom: hpdp(1.5),
     },
     btn: {
         flex: 1,
